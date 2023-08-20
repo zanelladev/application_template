@@ -1,0 +1,23 @@
+name: notes
+
+packages:  
+  - app
+  - core
+  - dependencies
+  - design_system
+
+scripts:
+  test:
+    run: melos run full_coverage && melos run test_coverage && melos run lcov
+
+  clean:
+    exec: flutter clean
+
+  test_coverage:
+    run: melos exec --ignore="ppix2" --ignore="common" --ignore="dev_common" --ignore="gosafe_widgetbook" -- flutter test --coverage
+
+  full_coverage:
+    run: melos exec --ignore="ppix2" --ignore="common" --ignore="dev_common" --ignore="gosafe_widgetbook" -- flutter pub run full_coverage
+
+  lcov:
+    run: dart scripts/merge_lcov.dart

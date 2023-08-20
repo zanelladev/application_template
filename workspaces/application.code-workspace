@@ -1,0 +1,43 @@
+{
+  "folders": [
+    {
+      "name": "notes",
+      "path": "../app"
+    },
+    {
+      "name": "core",
+      "path": "../core"
+    },
+    {
+      "name": "dependencies",
+      "path": "../dependencies"
+    },
+    {
+      "name": "design_system",
+      "path": "../design_system"
+    }
+  ],
+  "settings": {
+    "dart.flutterSdkPath": "../.fvm/flutter_sdk",
+    "search.exclude": {
+      "/.fvm": true
+    },
+    "files.watcherExclude": {
+      "/.fvm": true
+    },
+    "dart.lineLength": 120,
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Application (DEBUG)",
+        "type": "dart",
+        "request": "launch",
+        "flutterMode": "debug",
+        "cwd": "${workspaceFolder:notes}",
+        "program": "../app/lib/main.dart"
+      }
+    ],
+  }
+}

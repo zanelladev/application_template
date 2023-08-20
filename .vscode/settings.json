@@ -1,0 +1,6 @@
+{
+  "dart.runPubGetOnPubspecChanges": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}
