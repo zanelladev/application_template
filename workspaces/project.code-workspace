@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "name": "app",
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "dart.runPubGetOnPubspecChanges": "never",
+    "dart.lineLength": 120,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "search.exclude": {
+      "/.fvm": true
+    },
+    "files.watcherExclude": {
+      "/.fvm": true
+    }
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Project Debug",
+        "type": "dart",
+        "request": "launch",
+        "cwd": "${workspaceFolder:project}",
+        "flutterMode": "debug"
+      },
+      {
+        "name": "Project Profile",
+        "type": "dart",
+        "request": "launch",
+        "cwd": "${workspaceFolder:project}",
+        "flutterMode": "profile"
+      },
+      {
+        "name": "Project Release",
+        "type": "dart",
+        "request": "launch",
+        "cwd": "${workspaceFolder:project}",
+        "flutterMode": "release"
+      }
+    ],
+  }
+}

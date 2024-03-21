@@ -1,0 +1,28 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    public_member_api_docs: false
+    avoid_relative_lib_imports: true
+    prefer_relative_imports: true
+    lines_longer_than_80_chars: false
+    prefer_const_declarations: true
+    prefer_const_constructors_in_immutables: true
+    always_declare_return_types: true
+    annotate_overrides: true
+    avoid_empty_else: true
+    cascade_invocations: false
+    no_default_cases: false
+    use_build_context_synchronously: false
+    require_trailing_commas: true
+    avoid_unnecessary_containers: true
+    await_only_futures: true
+    unnecessary_await_in_return: true
+    prefer_single_quotes: true
+    avoid_redundant_argument_values: true
+    prefer_int_literals: true
+    avoid_void_async: true
+    type_annotate_public_apis: true
+    unnecessary_parenthesis: true
+    use_named_constants: true
+    use_setters_to_change_properties: false
