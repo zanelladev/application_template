@@ -4,12 +4,12 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'src/app_injections.dart';
 import 'src/app_widget.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   usePathUrlStrategy();
 
-  AppInjections.registerBinds();
+  await AppInjections.registerBinds();
 
   runApp(const AppWidget());
 }
