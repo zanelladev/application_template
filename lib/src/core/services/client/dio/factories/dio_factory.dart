@@ -11,7 +11,7 @@ class DioFactory {
       BaseOptions(
         baseUrl: ClientConstants.baseUrl,
         headers: {
-          HttpHeaders.contentTypeHeader: ContentType.json,
+          HttpHeaders.contentTypeHeader: ContentType.json.mimeType,
         },
       ),
     );
