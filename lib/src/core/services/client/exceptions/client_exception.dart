@@ -1,6 +1,6 @@
-import '../../../exceptions/project_exceptions.dart';
+import '../../../exceptions/template_exception.dart';
 
-class ClientException extends ProjectException {
+class ClientException extends TemplateException {
   final int statusCode;
 
   ClientException({

@@ -22,21 +22,21 @@
     "version": "0.2.0",
     "configurations": [
       {
-        "name": "Project Debug",
+        "name": "Template Debug",
         "type": "dart",
         "request": "launch",
         "cwd": "${workspaceFolder:project}",
         "flutterMode": "debug"
       },
       {
-        "name": "Project Profile",
+        "name": "Template Profile",
         "type": "dart",
         "request": "launch",
         "cwd": "${workspaceFolder:project}",
         "flutterMode": "profile"
       },
       {
-        "name": "Project Release",
+        "name": "Template Release",
         "type": "dart",
         "request": "launch",
         "cwd": "${workspaceFolder:project}",

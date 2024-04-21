@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Project Debug",
+      "name": "Template Debug",
       "type": "dart",
       "request": "launch",
       "cwd": ".",
@@ -10,7 +10,7 @@
       "toolArgs": ["--dart-define-from-file", "env/env.json"]
     },
     {
-      "name": "Project Profile",
+      "name": "Template Profile",
       "type": "dart",
       "request": "launch",
       "cwd": ".",
@@ -18,7 +18,7 @@
       "toolArgs": ["--dart-define-from-file", "env/env.json"]
     },
     {
-      "name": "Project Release",
+      "name": "Template Release",
       "type": "dart",
       "request": "launch",
       "cwd": ".",

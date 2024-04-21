@@ -1,5 +1,5 @@
-name: project_name
-description: "Project Name"
+name: app_template
+description: "Application Template"
 publish_to: "none"
 version: 0.1.0
 
@@ -13,12 +13,12 @@ dependencies:
   go_router: ^13.2.0
   dio: ^5.4.1
   shared_preferences: ^2.2.2
+  melos: ^4.1.0
+  full_coverage: ^1.0.0
 
   design_system:
     path: ./packages/design_system
-  melos: ^4.1.0
-
-
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
