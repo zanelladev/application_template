@@ -9,26 +9,29 @@ class SharedPreferencesStorageService implements IStorageService {
 
   @override
   Future<T?> get<T>(String key) async {
-    final actions = <Type, T?>{
-      String: sharedPreferences.getString(key) as T?,
-      int: sharedPreferences.getInt(key) as T?,
-      double: sharedPreferences.getDouble(key) as T?,
-      bool: sharedPreferences.getBool(key) as T?,
+    final result = switch (T) {
+      String => sharedPreferences.getString(key),
+      int => sharedPreferences.getInt(key),
+      double => sharedPreferences.getDouble(key),
+      bool => sharedPreferences.getBool(key),
+      _ => null,
     };
 
-    return actions[T.runtimeType];
+    return result as T?;
   }
 
   @override
   Future<void> put<T>(String key, T value) async {
-    final actions = <Type, Future<void> Function()>{
-      String: () async => sharedPreferences.setString(key, value as String),
-      int: () async => sharedPreferences.setInt(key, value as int),
-      double: () async => sharedPreferences.setDouble(key, value as double),
-      bool: () async => sharedPreferences.setBool(key, value as bool),
-    };
-
-    return actions[T.runtimeType]?.call();
+    switch (T) {
+      case String:
+        await sharedPreferences.setString(key, value as String);
+      case int:
+        await sharedPreferences.setInt(key, value as int);
+      case double:
+        await sharedPreferences.setDouble(key, value as double);
+      case bool:
+        await sharedPreferences.setBool(key, value as bool);
+    }
   }
 
   @override
