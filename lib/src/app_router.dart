@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'core/routes/routes.dart';
@@ -13,11 +12,8 @@ class AppRouter {
 
   AppRouter._internal();
 
-  final navigatorKey = GlobalKey<NavigatorState>();
-
   GoRouter get router {
     return GoRouter(
-      navigatorKey: navigatorKey,
       debugLogDiagnostics: true,
       initialLocation: Routes.splash.path,
       routes: _routes,
