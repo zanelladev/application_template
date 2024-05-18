@@ -51,8 +51,8 @@ jobs:
           git commit -m "chore: update version of pubspec.yaml automatically"
           git push
 
-      - name: "Melos Bootstrap"
-        run: melos bs
+      - name: "Flutter Pub Get"
+        run: flutter pub get
 
       - name: "Publish"
         run: "dart pub publish --dry-run"

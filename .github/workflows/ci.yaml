@@ -40,8 +40,8 @@ jobs:
         with:
           channel: "stable"
 
-      - name: "Melos Bootstrap"
-        run: melos bs
+      - name: "Flutter Pub Get"
+        run: flutter pub get
 
       - name: "Run Analyze"
         run: flutter analyze
