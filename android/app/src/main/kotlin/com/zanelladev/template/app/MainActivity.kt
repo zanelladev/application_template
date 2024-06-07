@@ -1,4 +1,4 @@
-package com.template.app
+package com.zanelladev.template.app
 
 import io.flutter.embedding.android.FlutterActivity
 
