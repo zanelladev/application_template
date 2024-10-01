@@ -15,6 +15,11 @@ dependencies:
   shared_preferences: 2.2.2
   melos: 6.0.0
   full_coverage: 1.0.0
+  firebase_auth: 4.16.0
+  connectivity_plus: 6.0.5
+  in_app_purchase: 3.2.0
+  flutter_secure_storage: 9.2.2
+  firebase_remote_config: 4.3.8
 
   design_system:
     path: ./packages/design_system
