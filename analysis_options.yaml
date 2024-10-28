@@ -1,3 +1,6 @@
+analyzer:
+  errors:
+    comment_references: ignore
 include: package:flutterando_analysis/flutter_package.yaml
 
 linter:

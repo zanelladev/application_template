@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.template.app">
+    package="com.zanelladev.template.app">
     <application
         android:label="Template"
         android:name="${applicationName}"

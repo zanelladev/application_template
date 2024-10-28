@@ -2,6 +2,12 @@
 
 This repository serves as a template to kickstart Flutter application development. With this template, you can quickly start a new Flutter project with a basic structure already set up, allowing you to focus on developing your application's specific logic. 
 
+##### Run to change template package name!
+
+```sh
+flutter pub run change_app_package_name:main your.package.name
+```
+
 ## Contribution
 
 If you find bugs or have suggestions for improvements to this template, feel free to open an issue or submit a pull request with your changes.
